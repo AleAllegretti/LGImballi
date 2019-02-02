@@ -30,6 +30,7 @@ Partial Class Imballi
         Me.Lungh_I = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Mat = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Alt_B
@@ -90,11 +91,19 @@ Partial Class Imballi
         Me.Mat.Size = New System.Drawing.Size(100, 20)
         Me.Mat.TabIndex = 8
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(92, 263)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 9
+        '
         'Imballi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(460, 264)
+        Me.ClientSize = New System.Drawing.Size(460, 320)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Mat)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Lungh_I)
@@ -118,4 +127,5 @@ Partial Class Imballi
     Friend WithEvents Lungh_I As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Mat As TextBox
+    Friend WithEvents TextBox1 As TextBox
 End Class
