@@ -103,4 +103,22 @@
         Me.Mat.Text = Materiale
     End Sub
 
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub MinButton_Click(sender As Object, e As EventArgs) Handles MinButton.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub MaxButton_Click(sender As Object, e As EventArgs) Handles MaxButton.Click
+        Me.WindowState = FormWindowState.Maximized
+        Me.NormalButton.Visible = True
+        Me.MaxButton.Visible = False
+    End Sub
+
+    Private Sub NormalButton_Click(sender As Object, e As EventArgs) Handles NormalButton.Click
+        Me.WindowState = FormWindowState.Normal
+        Me.MaxButton.Visible = True
+    End Sub
 End Class
