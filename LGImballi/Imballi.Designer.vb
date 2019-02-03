@@ -48,57 +48,72 @@ Partial Class Imballi
         Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Alt_B
         '
-        Me.Alt_B.Location = New System.Drawing.Point(250, 105)
+        Me.Alt_B.Location = New System.Drawing.Point(250, 103)
         Me.Alt_B.Name = "Alt_B"
-        Me.Alt_B.Size = New System.Drawing.Size(100, 20)
-        Me.Alt_B.TabIndex = 0
+        Me.Alt_B.Size = New System.Drawing.Size(73, 20)
+        Me.Alt_B.TabIndex = 1
+        Me.Alt_B.Text = "200"
+        Me.Alt_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Larg
         '
-        Me.Larg.Location = New System.Drawing.Point(250, 155)
+        Me.Larg.Location = New System.Drawing.Point(229, 120)
         Me.Larg.Name = "Larg"
-        Me.Larg.Size = New System.Drawing.Size(100, 20)
-        Me.Larg.TabIndex = 1
+        Me.Larg.Size = New System.Drawing.Size(73, 20)
+        Me.Larg.TabIndex = 3
+        Me.Larg.Text = "800"
+        Me.Larg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lung
         '
-        Me.Lung.Location = New System.Drawing.Point(250, 205)
+        Me.Lung.Location = New System.Drawing.Point(229, 71)
         Me.Lung.Name = "Lung"
-        Me.Lung.Size = New System.Drawing.Size(100, 20)
+        Me.Lung.Size = New System.Drawing.Size(73, 20)
         Me.Lung.TabIndex = 2
+        Me.Lung.Text = "30"
+        Me.Lung.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Alt_I
         '
-        Me.Alt_I.Location = New System.Drawing.Point(165, 32)
+        Me.Alt_I.Location = New System.Drawing.Point(165, 27)
         Me.Alt_I.Name = "Alt_I"
-        Me.Alt_I.Size = New System.Drawing.Size(100, 20)
-        Me.Alt_I.TabIndex = 3
+        Me.Alt_I.ReadOnly = True
+        Me.Alt_I.Size = New System.Drawing.Size(66, 20)
+        Me.Alt_I.TabIndex = 4
+        Me.Alt_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Larg_I
         '
-        Me.Larg_I.Location = New System.Drawing.Point(165, 76)
+        Me.Larg_I.Location = New System.Drawing.Point(165, 123)
         Me.Larg_I.Name = "Larg_I"
-        Me.Larg_I.Size = New System.Drawing.Size(100, 20)
-        Me.Larg_I.TabIndex = 4
+        Me.Larg_I.ReadOnly = True
+        Me.Larg_I.Size = New System.Drawing.Size(66, 20)
+        Me.Larg_I.TabIndex = 45
+        Me.Larg_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lungh_I
         '
-        Me.Lungh_I.Location = New System.Drawing.Point(165, 120)
+        Me.Lungh_I.Location = New System.Drawing.Point(165, 75)
         Me.Lungh_I.Name = "Lungh_I"
-        Me.Lungh_I.Size = New System.Drawing.Size(100, 20)
-        Me.Lungh_I.TabIndex = 5
+        Me.Lungh_I.ReadOnly = True
+        Me.Lungh_I.Size = New System.Drawing.Size(66, 20)
+        Me.Lungh_I.TabIndex = 55
+        Me.Lungh_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Mat
         '
-        Me.Mat.Location = New System.Drawing.Point(165, 164)
+        Me.Mat.Location = New System.Drawing.Point(165, 171)
         Me.Mat.Name = "Mat"
-        Me.Mat.Size = New System.Drawing.Size(100, 20)
-        Me.Mat.TabIndex = 8
+        Me.Mat.ReadOnly = True
+        Me.Mat.Size = New System.Drawing.Size(66, 20)
+        Me.Mat.TabIndex = 85
+        Me.Mat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel1
         '
@@ -111,7 +126,7 @@ Partial Class Imballi
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(772, 43)
+        Me.Panel1.Size = New System.Drawing.Size(669, 43)
         Me.Panel1.TabIndex = 9
         '
         'MaxButton
@@ -135,14 +150,14 @@ Partial Class Imballi
         Me.MaxButton.IconVisible = True
         Me.MaxButton.IconZoom = 60.0R
         Me.MaxButton.IsTab = False
-        Me.MaxButton.Location = New System.Drawing.Point(685, 0)
+        Me.MaxButton.Location = New System.Drawing.Point(583, 0)
         Me.MaxButton.Name = "MaxButton"
         Me.MaxButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.MaxButton.OnHovercolor = System.Drawing.Color.Silver
         Me.MaxButton.OnHoverTextColor = System.Drawing.Color.Silver
         Me.MaxButton.selected = False
-        Me.MaxButton.Size = New System.Drawing.Size(44, 44)
-        Me.MaxButton.TabIndex = 6
+        Me.MaxButton.Size = New System.Drawing.Size(44, 40)
+        Me.MaxButton.TabIndex = 600
         Me.MaxButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MaxButton.Textcolor = System.Drawing.Color.White
         Me.MaxButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -169,14 +184,14 @@ Partial Class Imballi
         Me.MinButton.IconVisible = True
         Me.MinButton.IconZoom = 60.0R
         Me.MinButton.IsTab = False
-        Me.MinButton.Location = New System.Drawing.Point(640, 0)
+        Me.MinButton.Location = New System.Drawing.Point(537, 0)
         Me.MinButton.Name = "MinButton"
         Me.MinButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.MinButton.OnHovercolor = System.Drawing.Color.Silver
         Me.MinButton.OnHoverTextColor = System.Drawing.Color.Silver
         Me.MinButton.selected = False
         Me.MinButton.Size = New System.Drawing.Size(44, 43)
-        Me.MinButton.TabIndex = 8
+        Me.MinButton.TabIndex = 800
         Me.MinButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MinButton.Textcolor = System.Drawing.Color.White
         Me.MinButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -203,14 +218,14 @@ Partial Class Imballi
         Me.NormalButton.IconVisible = True
         Me.NormalButton.IconZoom = 60.0R
         Me.NormalButton.IsTab = False
-        Me.NormalButton.Location = New System.Drawing.Point(684, 0)
+        Me.NormalButton.Location = New System.Drawing.Point(581, 0)
         Me.NormalButton.Name = "NormalButton"
         Me.NormalButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.NormalButton.OnHovercolor = System.Drawing.Color.Silver
         Me.NormalButton.OnHoverTextColor = System.Drawing.Color.Silver
         Me.NormalButton.selected = False
         Me.NormalButton.Size = New System.Drawing.Size(44, 43)
-        Me.NormalButton.TabIndex = 7
+        Me.NormalButton.TabIndex = 700
         Me.NormalButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.NormalButton.Textcolor = System.Drawing.Color.White
         Me.NormalButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -237,14 +252,14 @@ Partial Class Imballi
         Me.CloseButton.IconVisible = True
         Me.CloseButton.IconZoom = 60.0R
         Me.CloseButton.IsTab = False
-        Me.CloseButton.Location = New System.Drawing.Point(728, 0)
+        Me.CloseButton.Location = New System.Drawing.Point(625, 0)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.CloseButton.OnHovercolor = System.Drawing.Color.Red
         Me.CloseButton.OnHoverTextColor = System.Drawing.Color.Red
         Me.CloseButton.selected = False
         Me.CloseButton.Size = New System.Drawing.Size(44, 43)
-        Me.CloseButton.TabIndex = 2
+        Me.CloseButton.TabIndex = 200
         Me.CloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CloseButton.Textcolor = System.Drawing.Color.White
         Me.CloseButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -285,15 +300,17 @@ Partial Class Imballi
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(29, 150)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(213, 25)
+        Me.Label2.Size = New System.Drawing.Size(196, 25)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Lunghezza nastro [mm]"
+        Me.Label2.Text = "Lunghezza nastro [m]"
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Lung)
+        Me.GroupBox1.Controls.Add(Me.Larg)
         Me.GroupBox1.Location = New System.Drawing.Point(21, 84)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(340, 164)
+        Me.GroupBox1.Size = New System.Drawing.Size(322, 164)
         Me.GroupBox1.TabIndex = 14
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dati nastro"
@@ -308,9 +325,9 @@ Partial Class Imballi
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Larg_I)
         Me.GroupBox2.Controls.Add(Me.Alt_I)
-        Me.GroupBox2.Location = New System.Drawing.Point(459, 84)
+        Me.GroupBox2.Location = New System.Drawing.Point(394, 84)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(290, 201)
+        Me.GroupBox2.Size = New System.Drawing.Size(252, 216)
         Me.GroupBox2.TabIndex = 15
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Dimensioni imballo"
@@ -319,7 +336,7 @@ Partial Class Imballi
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(7, 163)
+        Me.Label7.Location = New System.Drawing.Point(7, 169)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(94, 25)
         Me.Label7.TabIndex = 19
@@ -329,31 +346,31 @@ Partial Class Imballi
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(7, 118)
+        Me.Label5.Location = New System.Drawing.Point(7, 120)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(149, 25)
+        Me.Label5.Size = New System.Drawing.Size(132, 25)
         Me.Label5.TabIndex = 17
-        Me.Label5.Text = "Larghezza [mm]"
+        Me.Label5.Text = "Larghezza [m]"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(7, 73)
+        Me.Label4.Location = New System.Drawing.Point(7, 71)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(154, 25)
+        Me.Label4.Size = New System.Drawing.Size(137, 25)
         Me.Label4.TabIndex = 18
-        Me.Label4.Text = "Lunghezza [mm]"
+        Me.Label4.Text = "Lunghezza [m]"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(7, 28)
+        Me.Label6.Location = New System.Drawing.Point(7, 22)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(126, 25)
+        Me.Label6.Size = New System.Drawing.Size(109, 25)
         Me.Label6.TabIndex = 16
-        Me.Label6.Text = "Altezza [mm]"
+        Me.Label6.Text = "Altezza [m]"
         '
         'BunifuThinButton21
         '
@@ -373,29 +390,27 @@ Partial Class Imballi
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(568, 293)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(465, 308)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(181, 41)
-        Me.BunifuThinButton21.TabIndex = 16
+        Me.BunifuThinButton21.TabIndex = 4
         Me.BunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Imballi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(772, 349)
+        Me.ClientSize = New System.Drawing.Size(669, 363)
         Me.Controls.Add(Me.BunifuThinButton21)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Lung)
-        Me.Controls.Add(Me.Larg)
         Me.Controls.Add(Me.Alt_B)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Imballi"
@@ -403,6 +418,8 @@ Partial Class Imballi
         Me.Text = "Imballi"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
