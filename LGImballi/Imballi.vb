@@ -1,5 +1,5 @@
 ﻿Public Class Imballi
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dim Alt_b, Lung_N, Larg_N, Alt_I, Lung_I, Larg_I, Vol_N, Vol_Imb, Somma_circ, i, ang, Alt_N, r As Decimal
         Dim Num_giri, Larg_cassa, Larg_cassa1, Alt_cassa, Costo, Lato_1, Lato_2, Lato_3, Larg_b, nstrati, n As Decimal
         Dim Materiale As String
@@ -67,37 +67,37 @@
 
         '40 piedi dry box
         Lato_2 = Larg_N + 0.15                      'Larghezza
-            Lato_1 = 2.24                               'Altezza porta
-            Lato_3 = Math.Round(Vol_Imb / (Lato_1), 1)  'Lunghezza
+        Lato_1 = 2.24                               'Altezza porta
+        Lato_3 = Math.Round(Vol_Imb / (Lato_1), 1)  'Lunghezza
 
-            'High cube
-            If Lato_3 > 11.8 Then
-                Lato_1 = 2.6
-                Lato_3 = Math.Round(Vol_Imb / (Lato_1), 1)
-            End If
+        'High cube
+        If Lato_3 > 11.8 Then
+            Lato_1 = 2.6
+            Lato_3 = Math.Round(Vol_Imb / (Lato_1), 1)
+        End If
 
-            'High cube con 1 giro laterale
-            If Lato_3 > 11.8 Then
-                Lato_2 = Lato_2 + Alt_b + 0.15
-                Lato_1 = 2.6
-                Lato_3 = 11.8
-            End If
+        'High cube con 1 giro laterale
+        If Lato_3 > 11.8 Then
+            Lato_2 = Lato_2 + Alt_b + 0.15
+            Lato_1 = 2.6
+            Lato_3 = 11.8
+        End If
 
-            '40 piedi high cube
-            If Lato_3 > 11.8 Then
-                Lato_2 = Larg_N + Larg_b * 2 + 0.15
-                Lato_1 = 2.6
-                nstrati = Lato_1 / (Alt_b + 0.04)
-                n = (Math.Round(nstrati - 0.4, 0) * 2) - 2
-            End If
+        '40 piedi high cube
+        If Lato_3 > 11.8 Then
+            Lato_2 = Larg_N + Larg_b * 2 + 0.15
+            Lato_1 = 2.6
+            nstrati = Lato_1 / (Alt_b + 0.04)
+            n = (Math.Round(nstrati - 0.4, 0) * 2) - 2
+        End If
 
-            If Lato_3 > 11.8 Then
-                MessageBox.Show("Imballo speciale", "Avviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1)
-                Exit Sub
-            End If
+        If Lato_3 > 11.8 Then
+            MessageBox.Show("Imballo speciale", "Avviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1)
+            Exit Sub
+        End If
 
-            'Output
-            Me.Alt_I.Text = Lato_1
+        'Output
+        Me.Alt_I.Text = Lato_1
         Me.Larg_I.Text = Lato_2
         Me.Lungh_I.Text = Lato_3
         Me.Mat.Text = Materiale
